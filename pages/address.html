@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/Formvalidation.js"></script>
+    <script src="../js/addressData.js"></script>
     <link rel ="stylesheet" href="../css/address.css">
     <title>Address Book</title>
 </head>
 <body>
     <header class="header-content header">
         <div class="logo-content">
-          <img src="../assets/logo.png" alt="">
+          <img src="../assets/logo.png" alt="logo">
           <div>
             <span class="address-text">ADDRESS</span><br>
             <span class="address-text book">BOOK</span>
@@ -21,14 +23,17 @@
         <form class="form" action="#" onsubmit="save()">
             <div class="form-head">
                 <div class="form-head-text">PERSON ADDRESS FORM</div>
+                <a href="../pages/home.html"><img class="form-head-image" src="../assets/cancel.jpeg" alt="logo"></a>
             </div>
           <div class="row-content">
             <label class="label text" for="name">Full Name</label>
             <input class="input" type="text" id="name" name="name" required>
+            <error-output class="text-error" for="text"></error-output>
           </div>
           <div class="row-content">
             <label class="label text" for="phone">Phone Number</label>
             <input class="input" type="text" id="phone" name="phone" required>
+            <error-output class="phone-error" for="phone"></error-output>
           </div>	
           <div class="row-content">
             <label class="label text" for="address">Address</label>
@@ -39,12 +44,23 @@
               <label class="label drop" for="city">City</label>
               <select id="city" name="city">
                 <option value="" selected="selected">Select City</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Ahmedabad">Ahmedabad</option>
               </select>
             </div>
             <div class="row-side">
               <label class="label drop" for="state">State</label>
               <select id="state" name="state">
                 <option value="" selected = "selected">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
               </select>
             </div>
             <div class="row-side">
