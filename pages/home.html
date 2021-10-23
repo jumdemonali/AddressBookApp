@@ -1,1 +1,34 @@
-Welcome to home page!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/home.css">
+  <title>Address Book Home Page</title>
+</head>
+<body>
+  <header class="header-content header">
+    <div class="logo-content">
+      <img src="../assets/logo.png" alt="">
+      <div>
+        <span class="address-text">ADDRESS</span><br>
+        <span class="address-text book">BOOK</span>
+      </div>
+    </div>
+  </header>
+  <div class="main-content">
+    <div class="header-content">
+      <div class="person-detail-text">
+        Person Details <div class="person-count">10</div>
+      </div>
+      <a href="../pages/address.html" class="add-button">
+        <img src="../assets/add-24px.svg" alt="">Add Person</a>
+    </div> 
+    <div class="table-main">
+      <table id="table-display" class="table"></table>
+    </div> 
+  </div> 
+  <script src="../js/addressData.js"></script>
+  <script src="../js/address.js"></script>
+</body>
+</html>

@@ -36,7 +36,12 @@ class AddressBookData {
             return this._address;
         }
         set address(address) {
-            this._address = address;
+            let addressRegex = RegExp('^[a-zA-Z0-9#,&,$%\\s]{4,}$');
+            if (addressRegex.test(address)) {
+                this._address = address;
+            } else {
+                throw "ADDRESS is Invalid!";
+            }
         }
     
         get city() {

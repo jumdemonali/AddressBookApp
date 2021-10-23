@@ -31,6 +31,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             phoneError.textContent = e;
         }
     });
+    
 
     checkForUpdate();
 });
